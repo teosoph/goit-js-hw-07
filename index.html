@@ -4,43 +4,168 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GoIT FE Core: HW__Modul-7</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <ul id="categories">
-      <li class="item">
-        <h2>Животные</h2>
+    <h1>GoIT FE Core: HW__Modul-7</h1>
+    <!-- button switcher -->
+    <!-- <input type="button" id="hider" value="Нажмите, чтобы спрятать текст" />
+    <div id="text">Текст</div> -->
 
-        <ul>
-          <li>Кот</li>
-          <li>Хомяк</li>
-          <li>Лошадь</li>
-          <li>Попугай</li>
-        </ul>
-      </li>
-      <li class="item">
-        <h2>Продукты</h2>
+    <!-- Task-1 -->
+    <section class="task-1">
+      <div class="flex">
+        <h2 class="task-title">task-01</h2>
+        <button class="button-switcher-1">Show</button>
+      </div>
+      <div class="popup1 open1">
+        <!-- categories list -->
+        <ul id="categories">
+          <li class="item">
+            <h2>Животные</h2>
 
-        <ul>
-          <li>Хлеб</li>
-          <li>Петрушка</li>
-          <li>Творог</li>
-        </ul>
-      </li>
-      <li class="item">
-        <h2>Технологии</h2>
+            <ul>
+              <li>Кот</li>
+              <li>Хомяк</li>
+              <li>Лошадь</li>
+              <li>Попугай</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2>Продукты</h2>
 
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node</li>
+            <ul>
+              <li>Хлеб</li>
+              <li>Петрушка</li>
+              <li>Творог</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2>Технологии</h2>
+
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node</li>
+            </ul>
+          </li>
         </ul>
-      </li>
-    </ul>
+      </div>
+    </section>
+    <!-- Task-2 -->
+    <section class="task-2">
+      <div class="flex">
+        <h2 class="task-title">task-02</h2>
+        <button class="button-switcher-2">Show</button>
+      </div>
+      <div class="popup2 open2">
+        <!-- ingredients list -->
+        <ul id="ingredients"></ul>
+      </div>
+    </section>
+    <!-- Task-3 -->
+    <section class="task-3">
+      <div class="flex">
+        <h2 class="task-title">task-03</h2>
+        <button class="button-switcher-3">Show</button>
+      </div>
+      <div class="popup3 open3">
+        <!-- gallery -->
+        <ul id="gallery" class="flex grid"></ul>
+      </div>
+    </section>
+    <!-- Task-4 -->
+    <section class="task-4">
+      <div class="flex">
+        <h2 class="task-title">task-04</h2>
+        <button class="button-switcher-4">Show</button>
+      </div>
+      <div class="popup4 open4">
+        <!-- counter -->
+        <div id="counter">
+          <button type="button" data-action="decrement">-1</button>
+          <span id="value">0</span>
+          <button type="button" data-action="increment">+1</button>
+        </div>
+      </div>
+    </section>
+    <!-- Task-5 -->
+    <section class="task-5">
+      <div class="flex">
+        <h2 class="task-title">task-05</h2>
+        <button class="button-switcher-5">Show</button>
+      </div>
+      <div class="popup5 open5">
+        <!-- input -->
+        <input type="text" placeholder="Ваше имя?" id="name-input" />
+        <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+      </div>
+    </section>
+    <!-- Task-6 -->
+    <section class="task-6">
+      <div class="flex">
+        <h2 class="task-title">task-06</h2>
+        <button class="button-switcher-6">Show</button>
+      </div>
+      <div class="popup6 open6">
+        <!-- input -->
+        <input
+          type="text"
+          id="validation-input"
+          data-length="6"
+          placeholder="Введи 6 символов"
+        />
+      </div>
+    </section>
+    <!-- Task-7 -->
+    <section class="task-7">
+      <div class="flex">
+        <h2 class="task-title">task-07</h2>
+        <button class="button-switcher-7">Show</button>
+      </div>
+      <div class="popup7 open7">
+        <!-- input -->
+        <input id="font-size-control" type="range" />
+        <br />
+        <span id="text">Абракадабра!</span>
+      </div>
+    </section>
+    <!-- Task-8 -->
+    <section class="task-8">
+      <div class="flex">
+        <h2 class="task-title">task-08</h2>
+        <button class="button-switcher-8">Show</button>
+      </div>
+      <div class="popup8 open8">
+        <!-- boxes -->
+        <div id="controls">
+          <input type="number" min="0" max="100" step="1" />
+          <button type="button" data-action="render">Создать</button>
+          <button type="button" data-action="destroy">Очистить</button>
+        </div>
+
+        <div id="boxes"></div>
+      </div>
+    </section>
 
     <script type="module" src="js/task-1.js"></script>
+    <script type="module" src="js/btn-switches/button-switcher-1.js"></script>
+    <script type="module" src="js/task-2.js"></script>
+    <script type="module" src="js/btn-switches/button-switcher-2.js"></script>
+    <script type="module" src="js/task-3.js"></script>
+    <script type="module" src="js/btn-switches/button-switcher-3.js"></script>
+    <script type="module" src="js/task-4.js"></script>
+    <script type="module" src="js/btn-switches/button-switcher-4.js"></script>
+    <script type="module" src="js/task-5.js"></script>
+    <script type="module" src="js/btn-switches/button-switcher-5.js"></script>
+    <script type="module" src="js/task-6.js"></script>
+    <script type="module" src="js/btn-switches/button-switcher-6.js"></script>
+    <script type="module" src="js/task-7.js"></script>
+    <script type="module" src="js/btn-switches/button-switcher-7.js"></script>
+    <script type="module" src="js/task-8.js"></script>
+    <script type="module" src="js/btn-switches/button-switcher-8.js"></script>
   </body>
 </html>

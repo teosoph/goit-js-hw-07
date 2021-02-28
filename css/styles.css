@@ -1,0 +1,62 @@
+body {
+  border: 1px solid blue;
+  text-align: center;
+}
+
+section {
+  border: 1px solid red;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 600px;
+
+  border: 1px solid green;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+button {
+  height: min-content;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.task-title {
+  margin-right: 20px;
+}
+
+.gallery__item {
+  list-style: none;
+}
+
+.gallery__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.gallery__img {
+  width: 100%;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
